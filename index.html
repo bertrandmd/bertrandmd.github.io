@@ -175,7 +175,7 @@
 	
 
     var colors = {'Agriculture': '#B6A3C9', 'Energie': '#C40000', 'ResTer': '#e20040', 'Routier': '#1B2638', 'AutresTr': '#7AB41D', 'Nature': '#4D6BA2'};//, 'plancade': '#EEA2B0', 'sellin': '#FF0000', 'torremocha': '#9D0000', 'deveyrac': '#8297BE'};
-    var fullNames = {'Agriculture': 'Agriculture et Sylviculture', 'Energie': 'Energie et Traitement des déchets', 'ResTer': 'Résidentiel et tertiaire', 'Routier': 'Transport Routier', 'AutresTr': 'Autres Transports', 'Nature': 'Nature'};//, 'plancade': 'Jean-Pierre Plancade', 'sellin': 'Jean-Christophe Sellin', 'torremocha': 'Sandra Torremocha', 'deveyrac': 'Christine de Veyrac'};
+    var fullNames = {'Agriculture': 'Agriculture et Sylviculture', 'Energie': 'Energie et Traitement des dÃ©chets', 'ResTer': 'RÃ©sidentiel et tertiaire', 'Routier': 'Transport Routier', 'AutresTr': 'Autres Transports', 'Nature': 'Nature'};//, 'plancade': 'Jean-Pierre Plancade', 'sellin': 'Jean-Christophe Sellin', 'torremocha': 'Sandra Torremocha', 'deveyrac': 'Christine de Veyrac'};
     var partis = {'Agriculture': 'RC', 'Energie': 'EXG', 'ResTer': 'PS - PC - PRG', 'Routier': 'FN', 'AutresTr': 'EELV', 'Nature': 'UMP - MoDem - UDI'};//, 'plancade': 'DVG', 'sellin': 'PG', 'torremocha': 'LO', 'deveyrac': 'DVD'};
 
     function getColor(candidat, score1, score2) {
@@ -232,7 +232,7 @@
 	
 	//autres fonctions
 	
-	//creation de la legende et position � droite
+	//creation de la legende et position à droite
 	 var legend = L.control({position: 'topright'});
 
     legend.onAdd = function (map) {
@@ -272,7 +272,7 @@
           dataList.push(value[Object.keys(value)]*2);
         };
         resultsList += '<ul>';
-        this._div.innerHTML ='<h2>Emissions de PM<sub>10</sub></h2>' +  '<b>' + bureau.NOM + '</b> (n�'+ bureau.REF_INSEE.replace(/^0+/, '') + ')<br />' + resultsList;
+        this._div.innerHTML ='<h2>Emissions de PM<sub>10</sub></h2>' +  '<b>' + bureau.NOM + '</b> (n°'+ bureau.REF_INSEE.replace(/^0+/, '') + ')<br />' + resultsList;
         animateBars(dataList);
       } else{
         var resultsList = '<ul>';
@@ -289,7 +289,7 @@
           resultsList += '%</div></li>';
         };
         resultsList += '<ul>';
-        this._div.innerHTML = '<h2>Emissions de PM<sub>10</sub></h2>' + '<div>Survolez une commune pour plus de détails</div>' + resultsList;
+        this._div.innerHTML = '<h2>Emissions de PM<sub>10</sub></h2>' + '<div>Survolez une commune pour plus de dÃ©tails</div>' + resultsList;
       };
     };
 
